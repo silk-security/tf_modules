@@ -7,7 +7,6 @@ You can use it as:
 ```tf
 provider "aws" {
   region  = "us-east-1"
-  version = "~> 4.16"
 }
 
 module "silk_security_role" {
