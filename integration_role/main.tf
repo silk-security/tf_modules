@@ -47,7 +47,7 @@ resource "aws_iam_role" "silk_security_integration_role" {
   ]
 
   dynamic "inline_policy" {
-    for_each = var.allow_whitelist[*]
+    for_each = var.allow_whitelist ? toset([1]) : toset([])
 
     content {
       name = "SuppressPolicy"

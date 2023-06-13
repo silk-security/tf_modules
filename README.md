@@ -11,7 +11,7 @@ provider "aws" {
 }
 
 module "silk_security_role" {
-  source      = "github.com/silk-security/tf_modules//silk_security_role"
+  source      = "github.com/silk-security/tf_modules//integration_role"
   external_id = "xxx"
 }
 ```
